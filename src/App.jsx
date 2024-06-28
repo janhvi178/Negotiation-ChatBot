@@ -4,6 +4,7 @@ import { useState } from "react";
 
 
 
+
 function App() {
   const [Question, setQuestion] = useState('');
   const [Answer,setAnswer]=useState('')
@@ -26,10 +27,10 @@ function App() {
     <>
       <h1 className="text-3xl font-bold underline text-center">Harsh here Get Ready for New Negotiation chatbot </h1>
       <h1 className="text-3xl font-bold underline text-center">Ab batao kon kon ready hai iske liye?? </h1>
-      <textarea className="align-center border-x-2 px-52, py-11" name="" id="" cols='30' rows={10} value={Question}
+      <textarea className="align-left border-x-10 px-52 py-11 m-4" name="" id="" cols='30' rows={10} value={Question}
       onChange={(e)=>setQuestion(e.target.value)}></textarea>
 
-      <button className=" my-0.5 px-52 py-12 bg-sky-500 hover:bg-sky-700" onClick={generateSol}>Ask</button>
+      <button className=" my-0.5 px-52 py-12 bg-sky-500 hover:bg-sky-700 m-4" onClick={generateSol}>Ask</button>
       <p>{Answer}</p>
     </>
   );
